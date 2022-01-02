@@ -143,7 +143,7 @@ PEGUARD has a dedicated Github repository [here](https://github.com/FULLSHADE/Fi
 
 ![image](https://user-images.githubusercontent.com/54753063/147796580-9d2bb0ea-a6a2-4bee-82b5-534e16e562b8.png)
 
-## Technical Details
+### Technical Details
 
 FILEGUARD takes a file as input, compresses it via GZIP, encrypts it using AES-128 (CBC mode) and appends the AES key to the end of the file. This utility was designed to pack the WARFOX DLL implant to aid in its DLL sideloading execution process.
 
