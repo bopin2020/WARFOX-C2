@@ -140,3 +140,17 @@ To configure LIGHTBEAM you need to set the following variables:
 ## FILEGUARD
 
 PEGUARD has a dedicated Github repository [here](https://github.com/FULLSHADE/FileGuard). This utility compresses files with ZLIB and encrypts them with AES-128 in CBC mode, the AES key is randomly generated and appended to the packed file.
+
+![image](https://user-images.githubusercontent.com/54753063/147796580-9d2bb0ea-a6a2-4bee-82b5-534e16e562b8.png)
+
+## Technical Details
+
+FILEGUARD takes a file as input, compresses it via GZIP, encrypts it using AES-128 (CBC mode) and appends the AES key to the end of the file. This utility was designed to pack the WARFOX DLL implant to aid in its DLL sideloading execution process.
+
+1. You provide an input file (technically any file type should work) as argv[1] and the expected output file as argv[2]
+2. FileGuard compresses the input file using GZIP and writes a copy to disk
+3. FileGuard encrypts the compressed file using AES-128 in CBC mode with a randomly generated key
+    * The AES IV is hardcoded as `ffffffffffffffff` to make the key parsing process of the dropper utility easier, but it could be randomized
+4. The AES key is appended to the file so it can be discovered by the dropper utility
+5. A copy of the finalized binary is stored in an output text file; the binary is formatted as a BYTE array which can be embedded in the dropper process
+
