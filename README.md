@@ -1,3 +1,5 @@
+![version](https://img.shields.io/badge/Version-1.0-red)
+
 ![image](https://user-images.githubusercontent.com/54753063/147038254-086fa8a5-4b88-4971-8450-8426a7344314.png)
 
 WARFOX is a software-based HTTPS beaconing Windows implant that uses a and multi-layered proxy network for C2 communications. This kit was designed to emulate covert APT offensive operations. This kit includes WARFOX (Windows implant), HIGHTOWER (C2 server), and other tools to build configs and set up multi-layered proxy networks.
