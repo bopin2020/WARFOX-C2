@@ -5,7 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/54753063/147038254-086fa8a5-4b88-4971-8450-8426a7344314.png)
 
-WARFOX is a software-based HTTPS beaconing Windows implant that uses a and multi-layered proxy network for C2 communications. This kit was designed to emulate covert APT offensive operations. This kit includes WARFOX (Windows implant), HIGHTOWER (C2 server), and other tools to build configs and set up multi-layered proxy networks.
+WARFOX is a software-based HTTPS beaconing Windows implant that uses a multi-layered proxy network for C2 communications. This kit was designed to emulate covert APT offensive operations. This kit includes WARFOX (Windows implant), HIGHTOWER (C2 server), and other tools to build configs and set up multi-layered proxy networks.
 
 Inspiration for this kit is taken from implants developed by EMISSARY PANDA (APT 27), and WICKED PANDA (APT 41). Various techniques and TTPs are taken from public reports on APT malware.
 
